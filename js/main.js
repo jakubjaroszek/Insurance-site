@@ -1,29 +1,28 @@
-const searchForm = document.querySelector('.drop-down-menu')
+const dropDownMenu = document.querySelector('.drop-down-menu')
 const navSearchLink = document.querySelector('.nav-search')
 const closeButtonMobileNav = document.querySelector('.close-button')
-const ButtonMobileNav = document.querySelector('.navbar-toggler')
+const BarsButtonMobileNav = document.querySelector('.navbar-toggler')
 
-const handleSearchForm = () => {
-	searchForm.classList.toggle('form-floating-active')
-
-	//1
+const handleDropDownMenu = () => {
+	dropDownMenu.classList.toggle('drop-down-menu-active')
 	navSearchLink.classList.toggle('nav-search-color-change')
 }
 
+// handling icon change when clicking search button in desktop view
 const checkIfMarkIsVisible = () => {
 	if (navSearchLink.classList.contains('nav-search-color-change')) {
-		//2
 		navSearchLink.innerHTML = 'Szukaj <i class="fa-solid fa-x"></i>'
 	}
 }
 
-const addSearch = () => {
-	if (searchForm.classList.contains('drop-down-menu')) {
+const backOfSearchIcon = () => {
+	if (dropDownMenu.classList.contains('drop-down-menu')) {
 		navSearchLink.innerHTML = 'Szukaj <i class="fa-solid fa-magnifying-glass"></i>'
 	}
 }
-navSearchLink.addEventListener('click', handleSearchForm)
-navSearchLink.addEventListener('click', addSearch)
+
+navSearchLink.addEventListener('click', handleDropDownMenu)
+navSearchLink.addEventListener('click', backOfSearchIcon)
 navSearchLink.addEventListener('click', checkIfMarkIsVisible)
-closeButtonMobileNav.addEventListener('click', handleSearchForm)
-ButtonMobileNav.addEventListener('click', handleSearchForm)
+closeButtonMobileNav.addEventListener('click', handleDropDownMenu)
+BarsButtonMobileNav.addEventListener('click', handleDropDownMenu)
