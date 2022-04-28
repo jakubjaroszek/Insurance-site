@@ -1,0 +1,11 @@
+@mixin standardButton {
+	padding: 0.8em 0.5em;
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-align: center;
+	background-color: $secondary-color;
+	border: none;
+	border-radius: 2px;
+	transition: background-color 0.3s;
+	text-decoration: none;
+}
