@@ -24,15 +24,15 @@
       <button class="navbar-toggler" type="button" data-bs-toggle="" data-bs-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars">
-          <p>menu</p>
+          <i>menu</i>
         </i>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="link nav-link" href="#insurances">Ubzpieczenia</a>
-          <a class="link nav-link" href="#investments">Inwestycje</a>
-          <a class="link nav-link" href="#retiring">Emerytura</a>
-          <a class="link nav-link" href="#contact">Obsługa i Pomoc</a>
+          <a class="link animation-link" href="#insurances">Ubzpieczenia</a>
+          <a class="link animation-link" href="#investments">Inwestycje</a>
+          <a class="link animation-link" href="#retiring">Emerytura</a>
+          <a class="link animation-link" href="#contact">Obsługa i Pomoc</a>
           <a class="link nav-search" href="#search">Szukaj <i class="fa-solid fa-magnifying-glass"></i></a>
         </div>
       </div>
@@ -42,14 +42,14 @@
     <div class="white-background">
       <button class="close-button" type="button">Zamknij menu <i class="fa-solid fa-x"></i></button>
       <div class="form-floating">
-        <input type="search" class="form-control" placeholder="Wyszukaj">
+        <input id="floatingInput" type="search" class="form-control" placeholder="Wyszukaj">
         <label for="floatingInput"><i class="fa-solid fa-magnifying-glass"></i></label>
         <button type="submit" class="search-button">Szukaj</button>
         <div class="navbar-nav">
-          <a class="link nav-link" href="#insurances"> Ubzpieczenia</a>
-          <a class="link nav-link" href="#investments">Inwestycje</a>
-          <a class="link nav-link" href="#retiring">Emerytura</a>
-          <a class="link nav-link" href="#contact">Obsługa i Pomoc</a>
+          <a class="link animation-link" href="#insurances"> Ubzpieczenia</a>
+          <a class="link animation-link" href="#investments">Inwestycje</a>
+          <a class="link animation-link" href="#retiring">Emerytura</a>
+          <a class="link animation-link" href="#contact">Obsługa i Pomoc</a>
         </div>
       </div>
     </div>
@@ -83,7 +83,6 @@
                 </div>
               </div>
             </div>
-
             <div class="col-sm-6 col-lg-4">
               <div class="card">
                 <img src="./img/product-image-2.jpg" class="card-img-top"
@@ -96,7 +95,6 @@
                 </div>
               </div>
             </div>
-
             <div class="col-sm-6 col-lg-4">
               <div class="card">
                 <img src="./img/product-image-3.jpg" class="card-img-top" alt="Młode małżeństwo z dzieckiem na rękach">
@@ -113,12 +111,10 @@
         <hr>
         <div class="rest-of-products-list">
           <div class="button-box">
-            <button class="show-hide-products" type="button" aria-controls="" aria-expanded="false"><i
-                class="fas fa-chevron-down"></i>
+            <button class="show-hide-products" type="button" aria-expanded="false"><i class="fas fa-chevron-down"></i>
             </button>
             <p>Wszystkie nasze produkty</p>
           </div>
-
           <div class="row">
             <div class="col-lg-4">
               <div class="product-box product-box-first">
@@ -131,7 +127,6 @@
                 <hr>
               </div>
             </div>
-
             <div class="col-lg-4">
               <div class="product-box product-box-second">
                 <h5 class="product-heading">Samochód</h5>
@@ -143,7 +138,6 @@
                 <hr>
               </div>
             </div>
-
             <div class="col-lg-4">
               <div class="product-box product-box-third">
                 <h5 class="product-heading">Dom i mieszkanie</h5>
@@ -154,20 +148,159 @@
                 </ul>
               </div>
             </div>
-
           </div>
           <hr class="end-line-rest-of-products">
         </div>
       </div>
     </section>
-    <section class="red-section"></section>
+    <section class="service py-5">
+      <h2>Obsługa i pomoc</h2>
+      <div class="container">
+        <div class="service-card-group py-5">
+          <div class="row ">
+            <div class="col-sm-6 col-lg-4">
+              <div class="service-card">
+                <p><i class="fa-solid fa-calendar-xmark"></i></p>
+                <div class="service-card-body">
+                  <h5 class="service-card-title">Szkody i zdarzenia</h5>
+                  <a class="link animation-link" href="#">Sprawdź</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="service-card">
+                <p><i class="fa-solid fa-file"></i></p>
+                <div class="service-card-body">
+                  <h5 class="service-card-title">Dokumenty</h5>
+                  <a class="link animation-link" href="#">Sprawdź</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="service-card">
+                <p><i class="fa-solid fa-money-check-dollar"></i></p>
+                <div class="service-card-body">
+                  <h5 class="service-card-title">Fundusze inwestycyjne</h5>
+                  <a class="link animation-link" href="#">Sprawdź</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="service-card">
+                <p><i class="fa-solid fa-circle-info"></i></p>
+                <div class="service-card-body">
+                  <h5 class="service-card-title">Twoje ubezpieczenia</h5>
+                  <a class="link animation-link" href="#">Sprawdź</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="service-card">
+                <p><i class="fa-solid fa-bag-shopping"></i></p>
+                <div class="service-card-body">
+                  <h5 class="service-card-title">Zarządzanie płatnościami</h5>
+                  <a class="link animation-link" href="#">Sprawdź</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="service-card">
+                <p><i class="fa-solid fa-recycle"></i></p>
+                <div class="service-card-body">
+                  <h5 class="service-card-title">Przedłużenie umów</h5>
+                  <a class="link animation-link" href="#">Sprawdź</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
-  <footer></footer>
+  <footer class="footer py-5">
+    <div class="container">
+      <div class="footer-boxes">
+        <div class="row">
+          <div class="col-sm-12 col-md-3">
+            <div class="footer-box">
+              <h3 class="footer-box-title">Kontakt</h3>
+              <ul class="footer-box-list">
+                <li class="link animation-link">Obsługa klienta</li>
+                <li class="link animation-link">Znajdź agenta</li>
+                <li class="link animation-link">Oddziały</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-3">
+            <div class="footer-box">
+              <h3 class="footer-box-title">Leaf-Insurance</h3>
+              <ul class="footer-box-list">
+                <li class="link animation-link">O nas</li>
+                <li class="link animation-link">Wyróżnienia</li>
+                <li class="link animation-link">Społeczność</li>
+                <li class="link animation-link">Kariera</li>
+                <li class="link animation-link">Plany kapitałowe</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-3">
+            <div class="footer-box">
+              <h3 class="footer-box-title">Centrum informacji</h3>
+              <ul class="footer-box-list">
+                <li class="link animation-link">Dokumenty</li>
+                <li class="link animation-link">Notowania funduszy</li>
+                <li class="link animation-link">Informacje na temat CRS</li>
+                <li class="link animation-link">Informacje o rabatach</li>
+                <li class="link animation-link">Centrum prasowe</li>
+                <li class="link animation-link">Blog</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-3">
+            <div class="footer-box">
+              <h3 class="footer-box-title">Ubezpieczenia</h3>
+              <ul class="footer-box-list">
+                <li class="link animation-link">Obsługa klienta</li>
+                <li class="link animation-link">Znajdź agenta</li>
+                <li class="link animation-link">Oddziały</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="social-media">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <hr>
+      <div class="footer-box-second-list">
+        <ul class="list">
+          <div class="row">
+            <div class="col-6 col-sm-3">
+              <li class="link animation-link">Polityka prywatności</li>
+            </div>
+            <div class="col-6 col-sm-3">
+              <li class="link animation-link">Regulamin</li>
+            </div>
+            <div class="col-6 col-sm-3">
+              <li class="link animation-link">Dokumenty</li>
+            </div>
+            <div class="col-6 col-sm-3">
+              <li class="link animation-link">Mapa serwisu</li>
+            </div>
+          </div>
+        </ul>
+        <ul class="footer-copy-right">
+          <li>&copy; <span class="footer-year"></span> Leaf-Insurance</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
     crossorigin="anonymous"></script>
   <script src="./js/main.js"></script>
 </body>
-
 
 </html>
