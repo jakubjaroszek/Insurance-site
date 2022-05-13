@@ -400,7 +400,6 @@ header {
 			align-items: center;
 			margin: 2em 1em;
 			height: 250px;
-			//width: 250px;
 			background-color: $gray-color;
 			.fa-solid {
 				margin-bottom: 0.3em;
@@ -426,7 +425,7 @@ header {
 
 //footer
 .footer {
-	background-color: #2e2e2e;
+	background-color: $footer-background-color;
 	.footer-boxes {
 		display: flex;
 		flex-direction: column;
@@ -450,7 +449,7 @@ header {
 					margin: 0;
 					padding: 1em 0;
 					font-weight: normal;
-					color: #ccc;
+					color: $footer-gray-color;
 					transition: color 0.3s;
 					cursor: pointer;
 				}
@@ -479,7 +478,7 @@ header {
 		}
 	}
 	hr {
-		color: #ccc;
+		color: $footer-gray-color;
 	}
 	.footer-box-second-list {
 		display: flex;
@@ -489,7 +488,7 @@ header {
 			list-style-type: none;
 			.link {
 				font-weight: normal;
-				color: #ccc;
+				color: $footer-gray-color;
 				transition: color 0.3s;
 				cursor: pointer;
 			}
@@ -504,7 +503,7 @@ header {
 		.footer-copy-right {
 			margin-top: 0.5em;
 			font-size: 1.5rem;
-			color: #ccc;
+			color: $footer-gray-color;
 			list-style-type: none;
 		}
 	}
@@ -614,8 +613,8 @@ header {
 		.navbar-nav {
 			.nav-search {
 				margin-left: 5em;
-				border-left: 1px solid rgb(255, 192, 90);
-				border-right: 1px solid rgb(255, 192, 90);
+				border-left: 1px solid $navbar-search-border-color;
+				border-right: 1px solid $navbar-search-border-color;
 			}
 			display: contents;
 			margin-left: 5em;
