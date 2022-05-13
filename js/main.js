@@ -14,20 +14,17 @@ const handleDropDownMenu = () => {
 	navSearchLink.classList.toggle('nav-search-color-change')
 }
 
-// handling icon change when clicking search button in desktop view
-const checkIfMarkIsVisible = () => {
+const handleIconChange = () => {
+	//checking what icon is actually seen in nav search link and replacing it
+	if (dropDownMenuMobile.classList.contains('drop-down-menu-mobile')) {
+		navSearchLink.innerHTML = 'Szukaj <i class="fa-solid fa-magnifying-glass"></i>'
+	}
 	if (navSearchLink.classList.contains('nav-search-color-change')) {
 		navSearchLink.innerHTML = 'Szukaj <i class="fa-solid fa-x"></i>'
 	}
 }
 
-const backOfSearchIcon = () => {
-	if (dropDownMenuMobile.classList.contains('drop-down-menu-mobile')) {
-		navSearchLink.innerHTML = 'Szukaj <i class="fa-solid fa-magnifying-glass"></i>'
-	}
-}
-
-//	closing  menu by mouse click, not only a button
+//closing  menu by mouse click, not only a nav search link
 const closingMenu = () => {
 	if (navSearchLink.classList.contains('nav-search-color-change')) {
 		document.addEventListener(
@@ -67,8 +64,7 @@ const handleCurrentYear = () => {
 handleCurrentYear()
 
 navSearchLink.addEventListener('click', handleDropDownMenu)
-navSearchLink.addEventListener('click', backOfSearchIcon)
-navSearchLink.addEventListener('click', checkIfMarkIsVisible)
+navSearchLink.addEventListener('click', handleIconChange)
 navSearchLink.addEventListener('click', closingMenu)
 closeButtonMobileNav.addEventListener('click', handleDropDownMenu)
 BarsButtonMobileNav.addEventListener('click', handleDropDownMenu)
