@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/552ff4bf5d.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Leaf-Insurance. Ubezpiecz się online.</title>
+  <link rel="shortcut icon" type="image/jpg" href="./img/fav-icon-2.png" />
+</head>
+
+<body>
+  <nav id="navbar" class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="./index.html"> <i class="fab fa-canadian-maple-leaf"></i><span
+          class="navbar-brand-company-name">Leaf-Insurance</span></a>
+    </div>
+  </nav>
+  <header>
+  </header>
+  <main>
+    <div class="insurance-calculator-form">
+      <div class="container">
+        <div class="insurance-calculator-form-content">
+          <form>
+            <div class="form-group">
+              <h1>Kalkulator ubezpieczenia</h1>
+            </div>
+            <div class="form-group date-of-birth">
+              <label for="date-of-birth">Data urodzenia</label>
+              <input type="text" class="form-control" id="date-of-birth" aria-describedby="dateOfBirth"
+                placeholder="dd/mm/rrrr">
+            </div>
+            <div class="form-group phone">
+              <label for="phone">Telefon</label>
+              <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">+48</div>
+                </div>
+                <input type="text" class="form-control" id="phone" placeholder="" aria-describedby="phone">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="">
+            </div>
+            <div class="form-group"> <button type="submit" class="">Przejdź dalej</button></div>
+          </form>
+          <div class="end-information">
+            <p>Informujemy, że Twoje dane osobowe będą przetwarzane przez Leaf-Insurance w celu przedstawienia Ci ofert
+              ubezpieczeniowych oraz zawarcia i realizacji umowy. Podawanie danych osobowych jest dobrowolne i
+              przysługuje Ci prawo dostępu od nich oraz ich poprawiania, usuwania oraz prawo zgłoszenia sprzeciwu wobec
+              przetwarzania danych w celach marketingowych. Szczegółowy opis sposobu przetwarzania danych osobowych
+              zamieszczony jest w polityce prywatności.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer py-5">
+    <div class="container">
+      <hr>
+      <div class="footer-box-second-list">
+        <ul class="list">
+          <div class="row">
+            <div class="col-6 col-sm-3">
+              <li class="link animation-link">Polityka prywatności</li>
+            </div>
+            <div class="col-6 col-sm-3">
+              <li class="link animation-link">Regulamin</li>
+            </div>
+            <div class="col-6 col-sm-3">
+              <li class="link animation-link">Dokumenty</li>
+            </div>
+            <div class="col-6 col-sm-3">
+              <li class="link animation-link">Mapa serwisu</li>
+            </div>
+          </div>
+        </ul>
+        <ul class="footer-copy-right">
+          <li>&copy; <span class="footer-year"></span> Leaf-Insurance</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

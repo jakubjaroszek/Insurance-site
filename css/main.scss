@@ -26,7 +26,7 @@ input[type='search']::-webkit-search-cancel-button:hover {
 .link {
 	position: relative;
 	margin: 0 1em;
-	padding: 0.4em;
+	padding: 0.3em;
 	font-size: 1.5rem;
 	font-weight: bold;
 	color: $main-color;
@@ -77,10 +77,6 @@ nav {
 		padding: 1rem;
 		font-size: 3rem;
 		color: $main-color;
-		i {
-			font-family: 'Montserrat', sans-serif;
-			font-size: 1.5rem;
-		}
 	}
 	.navbar-nav {
 		display: inline-block;
@@ -411,6 +407,7 @@ header {
 				flex-direction: column;
 				justify-content: center;
 				align-items: center;
+				text-align: center;
 				.service-card-title {
 					font-size: 1.7rem;
 					font-weight: bold;
@@ -509,6 +506,200 @@ header {
 	}
 }
 
+//car insurnace more info subpage
+.insurance-car-more-info {
+	.insurance-car-more-info-content {
+		h1 {
+			margin-top: 1em;
+			font-size: 3.5rem;
+			text-align: center;
+		}
+		p {
+			margin: 2em 1em;
+			font-size: 1.6rem;
+			text-align: center;
+		}
+		.products {
+			.card-group {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				.card {
+					.card-body {
+						position: relative;
+						height: 500px;
+						ul {
+							li {
+								font-size: 1.5rem;
+								margin: 1em 1em;
+							}
+						}
+						.card-btn {
+							position: absolute;
+							bottom: 1em;
+							left: 50%;
+							transform: translateX(-50%);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+//insurances subpage
+.insurances-header {
+	.insurances-content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		h1 {
+			margin-top: 1em;
+			font-size: 3.5rem;
+			text-align: center;
+		}
+		p {
+			margin: 1em 1em;
+			font-size: 1.6rem;
+			text-align: center;
+		}
+		.service {
+			background-color: $white-color;
+			.service-card {
+				background-color: $white-color;
+			}
+		}
+
+		.end-button {
+			margin: 2em 0;
+			width: 95%;
+			@include standardButton;
+			color: $main-color;
+		}
+		.end-button:hover {
+			color: $white-color;
+			background-color: $main-color;
+		}
+		.products {
+			.card-group {
+				.card {
+					text-align: center;
+					.fa-solid {
+						margin-top: 1em;
+						font-size: 4rem;
+						color: $main-color;
+					}
+					.card-body {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						height: 300px;
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+}
+
+//car insurance information subpage
+.car-insurance {
+	.hero-img {
+		background-image: url('../img/car-hero-img-small.jpg');
+		.hero-content {
+			.hero-btn {
+				margin: 1em 0;
+			}
+		}
+	}
+}
+
+//tourist insurance information subpage
+.tourist-insurance {
+	.hero-img {
+		background-image: url('../img/tourist-hero-img-small.jpg');
+		.hero-content {
+			.hero-btn {
+				margin: 1em 0;
+			}
+		}
+	}
+}
+
+//life insurance information subpage
+.life-insurance {
+	.hero-img {
+		background-image: url('../img/life-hero-img-small.jpg');
+		.hero-content {
+			.hero-btn {
+				margin: 1em 0;
+			}
+		}
+	}
+}
+
+//investments information subpage
+.investments {
+	.hero-img {
+		background-image: url('../img/investments-hero-img-small.jpg');
+		.hero-content {
+			position: absolute;
+			top: 50%;
+			display: inline-block;
+		}
+	}
+}
+
+//investments information subpage
+.retiring {
+	.hero-img {
+		background-image: url('../img/retiring-hero-img-small.jpg');
+		.hero-content {
+			position: absolute;
+			top: 50%;
+			display: inline-block;
+		}
+	}
+}
+
+//insurance calculator subpage
+.insurance-calculator-form {
+	.insurance-calculator-form-content {
+		max-width: 600px;
+		.form-group {
+			min-width: 250px;
+			margin: 2em 1em;
+			label {
+				margin: 0.5em 0;
+				font-size: 1.8rem;
+			}
+			input,
+			.input-group-text {
+				font-size: 2rem;
+			}
+			h1 {
+				font-size: 3.5rem;
+			}
+			button {
+				width: 100%;
+				@include standardButton;
+				color: $main-color;
+			}
+			button:hover {
+				color: $white-color;
+				background-color: $main-color;
+			}
+		}
+	}
+	.date-of-birth,
+	.phone {
+		width: 250px;
+	}
+	.end-information {
+		margin: 6em 1em;
+	}
+}
+
 // media queries
 @media (min-width: 376px) {
 	.drop-down-menu-mobile {
@@ -544,10 +735,24 @@ header {
 	}
 	.products {
 		.card-group {
+			.card-third {
+				width: 50%;
+				margin: 0 auto;
+			}
 			.card {
 				.card-img-top {
 					height: 30vw;
 				}
+			}
+		}
+	}
+	.insurance-calculator-form {
+		height: 100vh;
+	}
+	.insurances-header {
+		.insurances-content {
+			.end-button {
+				width: 200px;
 			}
 		}
 	}
@@ -655,6 +860,10 @@ header {
 	}
 	.products {
 		.card-group {
+			.card-third {
+				flex: 0 0 auto;
+				width: 33.33333333%;
+			}
 			.card {
 				.card-img-top {
 					height: 13vw;
@@ -695,6 +904,49 @@ header {
 				right: 0;
 			}
 		}
+	}
+	.insurances-more-info {
+		.insurances-more-info-content {
+			.products {
+				.card-group {
+					.card {
+						.card-body {
+							height: 400px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.car-insurance {
+	.hero-img {
+		background-image: url('../img/car-hero-img-big.jpg');
+	}
+}
+
+.tourist-insurance {
+	.hero-img {
+		background-image: url('../img/tourist-hero-img-big.jpg');
+	}
+}
+
+.life-insurance {
+	.hero-img {
+		background-image: url('../img/life-hero-img-big.jpg');
+	}
+}
+
+.investments {
+	.hero-img {
+		background-image: url('../img/investments-hero-img-big.jpg');
+	}
+}
+
+.retiring {
+	.hero-img {
+		background-image: url('../img/retiring-hero-img-big.jpg');
 	}
 }
 
