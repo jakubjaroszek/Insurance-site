@@ -6,3 +6,4 @@ In desktop view there is avaiable animation of search link and rest of products 
 
 Javascript code with anonymous functions is responsible for control of showing and hiding search menu, rest products section and handling current year. 
 
+You can watch it live here: https://jakubjaroszek.github.io/Insurance-site/
